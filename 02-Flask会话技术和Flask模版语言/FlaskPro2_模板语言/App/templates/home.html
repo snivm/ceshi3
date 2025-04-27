@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Home</h2>
+    <hr>
+
+    {#  模板语言的注释   #}
+
+    <h4>变量：</h4>
+    <p>姓名: {{ name }}</p>
+    <p>年龄: {{ age }}</p>
+    <p>爱好: {{ likes }}</p>
+
+    <hr>
+    <h4>if语句</h4>
+    {% if age>=18 %}
+        <p>{{ name }}已经是成年坤了</p>
+    {% else %}
+        <p>{{ name }}快快长大</p>
+    {% endif %}
+    <hr>
+    <h4>for语句</h4>
+    {% for like in likes %}
+        {{ like }}
+    {% endfor %}
+</body>
+</html>
